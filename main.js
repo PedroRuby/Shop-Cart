@@ -1,5 +1,5 @@
 let carts = document.querySelectorAll('.add-cart') ;
-let decreasers = document.querySelectorAll('.decrease') ;
+// let decreasers = document.querySelectorAll('.decrease') ;
 
 let products = [ {name: 'iPhone SE', tag: 'se', price: 1, inCart: 0},
                 {name: 'iPhone 11', tag: '11', price: 2, inCart: 0},
@@ -15,6 +15,7 @@ for (let i=0; i < carts.length; i++) {
   })
 }
 
+/*
 for (let i=0; i < decreasers.length; i++) {
   let decreaseButton = document.querySelector('.decrease' + products[i].tag) ;
 
@@ -38,6 +39,7 @@ function decreaseQuantity(product) {
 
   localStorage.setItem("productsInCart", JSON.stringify(cartItems)) ;
 }
+*/
 
 function onLoadCartNumbers() {
   let productNumbers = localStorage.getItem('cartNumbers') ;
